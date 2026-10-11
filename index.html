@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>黃金飾品與 925 銀鍍金日常保養指南</title>
+    <title>💝專屬您的黃金飾品日常保養指南💝</title>
     <style>
         :root {
             --primary-color: #b8860b; /* 質感金 */
@@ -22,23 +22,37 @@
         .header {
             background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
             color: #d4af37;
-            text-align: center;
-            padding: 40px 20px;
+            padding: 25px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        .header h1 {
-            margin: 0 0 10px 0;
-            font-size: 24px;
-            letter-spacing: 1px;
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
-        .header p {
+        .logo {
+            height: 45px;
+            width: auto;
+            object-fit: contain;
+        }
+        .header-text h1 {
+            margin: 0 0 4px 0;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            color: #f3ebd8;
+        }
+        .header-text p {
             margin: 0;
-            color: #cccccc;
-            font-size: 14px;
+            color: #aaaaaa;
+            font-size: 12px;
         }
         .container {
             max-width: 600px;
             margin: 20px auto;
-            padding: 0 15px;
+            padding: 0 15px 80px 15px;
         }
         .card {
             background: var(--card-bg);
@@ -48,7 +62,7 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
         h2 {
-            font-size: 18px;
+            font-size: 17px;
             color: var(--primary-color);
             border-bottom: 2px solid #f3ebd8;
             padding-bottom: 8px;
@@ -92,19 +106,54 @@
             font-size: 14px;
             color: #555;
         }
+        /* 右下角官方 LINE 懸浮按鈕 */
+        .line-float-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #06C755;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            transition: transform 0.2s;
+        }
+        .line-float-btn:hover {
+            transform: scale(1.05);
+        }
+        .line-float-btn img {
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            padding: 2px;
+        }
         .footer {
             text-align: center;
             color: #888;
             font-size: 12px;
-            padding: 20px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1>✨ 專屬您的珠寶日常保養指南</h1>
-        <p>讓您的黃金與飾品常保閃耀光澤</p>
+        <div class="header-left">
+            <!-- 這裡對應你上傳的 Logo 檔名，如果是 logo.png 就不需修改 -->
+            <img src="logo.png" alt="沐光金工坊" class="logo">
+            <div class="header-text">
+                <h1>💝 專屬您的黃金飾品日常保養指南 💝</h1>
+                <p>讓您的黃金與飾品常保閃耀光澤</p>
+            </div>
+        </div>
     </div>
 
     <div class="container">
@@ -173,8 +222,15 @@
         </div>
     </div>
 
+    <!-- 右下角官方 LINE 懸浮按鈕 -->
+    <a href="https://line.me/R/ti/p/@815ikjjr" target="_blank" class="line-float-btn">
+        <!-- 這裡使用內建或線上 LINE 圖示，點擊會直接導向加好友 -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.845 10.036 9.608.391.084.922.258 1.056.59.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.246 1.186 1.049.646 1.295-.54 6.994-4.11 9.556-7.039 1.776-1.999 2.475-4.14 2.475-5.917z"/></svg>
+        官方 LINE
+    </a>
+
     <div class="footer">
-        <p>© Jewelry Care Guide. All Rights Reserved.</p>
+        <p>© 沐光金工坊 MU GLOW. All Rights Reserved.</p>
     </div>
 
 </body>
