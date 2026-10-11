@@ -22,7 +22,7 @@
         .header {
             background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
             color: #d4af37;
-            text-align: center; /* 讓內部所有文字與圖片置中 */
+            text-align: center;
             padding: 40px 20px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
@@ -30,7 +30,7 @@
             height: 60px;
             width: auto;
             object-fit: contain;
-            margin-bottom: 15px; /* Logo 與標題間距 */
+            margin-bottom: 15px;
             display: inline-block;
         }
         .header h1 {
@@ -97,7 +97,7 @@
             margin: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             font-size: 14px;
             color: #555;
         }
@@ -134,13 +134,19 @@
 <body>
 
     <div class="header">
-        <!-- Logo 圖片檔案名稱對應你上傳的 logo.png -->
         <img src="logo.png" alt="沐光金工坊" class="logo" onerror="this.style.display='none'">
         <h1>💝 專屬您的黃金飾品日常保養指南 💝</h1>
-        <p>讓您的黃金與飾品常保閃耀光澤</p>
+        <p>讓您的黃金常保閃耀光澤</p>
     </div>
 
     <div class="container">
+        <!-- 黃金特性說明 -->
+        <div class="card" style="background-color: #fdfaf3; border-left: 4px solid #b8860b;">
+            <p style="margin: 0; font-size: 14px; color: #555;">
+                ✨ <strong>黃金小常識：</strong> 黃金（足金）本身性質穩定、不易氧化生鏽，但日常佩戴容易因汗水、油脂、灰塵或化學品而顯得黯淡無光。定期清潔與正確配戴，能讓金飾常保耀眼光芒！
+            </p>
+        </div>
+
         <!-- 清潔步驟 -->
         <div class="card">
             <h2>在家簡單清潔步驟</h2>
@@ -165,7 +171,7 @@
                 <div class="step-num">3</div>
                 <div class="step-content">
                     <h3>浸泡幾分鐘</h3>
-                    <p>將黃金首飾放入水中浸泡約 3 到 5 分鐘，讓表面污垢軟化。</p>
+                    <p>將黃金首飾放入水中浸泡約 3 到 5 分鐘，讓表面污垢與油污軟化。</p>
                 </div>
             </div>
 
@@ -181,7 +187,7 @@
                 <div class="step-num">5</div>
                 <div class="step-content">
                     <h3>清水沖洗</h3>
-                    <p>用乾淨的溫水將殘餘泡沫沖洗乾淨。</p>
+                    <p>用乾淨的溫水將殘餘泡沫徹底沖洗乾淨。</p>
                 </div>
             </div>
 
@@ -189,19 +195,20 @@
                 <div class="step-num">6</div>
                 <div class="step-content">
                     <h3>擦乾水分</h3>
-                    <p>使用柔軟、不掉毛的珠寶布或棉布徹底擦乾。</p>
+                    <p>使用柔軟、不掉毛的珠寶布或超細纖維布輕柔擦乾，並置於陰涼處風干。</p>
                 </div>
             </div>
         </div>
 
         <!-- 注意事項 -->
         <div class="card">
-            <h2>日常佩戴注意事項</h2>
+            <h2>佩戴與日常禁忌</h2>
             <ul>
-                <li><strong>避免化學品接觸：</strong> 香水、化妝品、防曬乳及溫泉硫磺容易加速鍍金層剝落或使金屬黯淡，建議「先完妝、最後佩戴飾品」。</li>
-                <li><strong>洗澡與運動請取下：</strong> 汗水中的鹽分與沐浴乳會加速 925 銀鍍金鏈條氧化與磨損。</li>
-                <li><strong>獨立妥善收納：</strong> 黃金質地較軟易刮傷，銀飾接觸空氣易氧化，建議單獨收納於夾鏈袋或絨布盒中。</li>
-                <li><strong>鍍金鏈條護理禁忌：</strong> 鏈條若有 925 銀鍍金部件，<strong>切勿使用拭銀膏或洗銀水</strong>，以免腐蝕金層。</li>
+                <li><strong>建立「最後戴上、最先取下」習慣：</strong> 化妝、噴香水、塗抹乳液或防曬乳後再佩戴金飾，避免化學成分加速表面黯淡。</li>
+                <li><strong>遠離化學品與溫泉：</strong> 避免接觸漂白水、各類強效清潔劑以及溫泉（硫化物），以免金飾受損。</li>
+                <li><strong>洗澡與運動建議取下：</strong> 避免汗水、氯氣或沐浴乳殘留在金飾縫隙中造成霧化或卡垢。</li>
+                <li><strong>避免碰撞與摩擦：</strong> 黃金質地較軟，容易因互相摩擦或碰撞產生刮痕，應避免與其他硬金屬混戴。</li>
+                <li><strong>正確收納方式：</strong> 每件金飾建議單獨包裹在柔軟的絨布袋或首飾盒中，存放於陰涼乾燥處，避免互相拉扯、打結或摩擦。</li>
             </ul>
         </div>
     </div>
