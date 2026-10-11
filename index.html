@@ -22,15 +22,16 @@
         .header {
             background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
             color: #d4af37;
-            text-align: center;
-            padding: 35px 20px;
+            text-align: center; /* 讓內部所有文字與圖片置中 */
+            padding: 40px 20px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .logo {
-            height: 50px;
+            height: 60px;
             width: auto;
             object-fit: contain;
-            margin-bottom: 12px;
+            margin-bottom: 15px; /* Logo 與標題間距 */
+            display: inline-block;
         }
         .header h1 {
             margin: 0 0 8px 0;
@@ -133,7 +134,7 @@
 <body>
 
     <div class="header">
-        <!-- 這裡放你的 Logo，如果你的檔案叫其他名稱（例如 logo.png），可自行修改 src -->
+        <!-- Logo 圖片檔案名稱對應你上傳的 logo.png -->
         <img src="logo.png" alt="沐光金工坊" class="logo" onerror="this.style.display='none'">
         <h1>💝 專屬您的黃金飾品日常保養指南 💝</h1>
         <p>讓您的黃金與飾品常保閃耀光澤</p>
